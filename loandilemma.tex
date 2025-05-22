@@ -29,16 +29,33 @@ shall I invest them instead?}
 The answer is analyzed mathematically as well as discussed
 informally.
 
-The dilemma is that if you don't use your capital to pay down the loan at once,
-you have capital over that you can invest, though you have to take into account
-the down payments of keeping the loan.
-
 Hence, we discuss two different decisions:
 
 $D_D$: Only down pay the whole loan at once, ignore any investment.
 
 $D_I$: Invest in allegedly profitable investment $I$ while down paying the
 payments of the loan.
+
+\section{Qualitative Reasoning}
+
+The dilemma is that if you don't use your capital to pay down the loan at once,
+you have capital over that you can invest, though you have to take into account
+the down payments of keeping the loan. By investing you can achieve a higher
+overall return.
+
+Since you keep the loan, the configuration can be seen as that the investment is
+partly funded by the loan which means you hence have a cost of capital -- the
+interest rate -- which can be used in tools such as WACC. Viewing as that you
+are essentially are funding your investment with the loan is useful because the
+interest rates and conditions of student loans are typically highly advantageous.
+
+The advantage of investing is that you achieve a higher return, although it
+needs to be within risk that are acceptable.
+
+The advantage of down paying the loan is that it's the economical rational thing
+to do because investing isn't profitable or feasible. It also comes with the
+advantages associated with not having to down pay the loan since it's done at
+once.
 
 \section{Mathematical Analysis}
 
@@ -47,6 +64,7 @@ interest rate $L_r$, the fixed down payment amount $L_d$, and the withstanding
 amount with present value $NPV_L$. $NPV_L$ is expressed as:
 
 \def\NPVL{L_d \times \frac{1 - (r + 1)^{-n}}{r}}
+
 \begin{equation}
 NPV_L=\NPVL
 \end{equation}
@@ -57,7 +75,9 @@ this amount is specific to the investment. If it's a stock, it can be estimated
 in different ways. One approach to model the investment, is as the present net
 value of cash flows:
 
-\def\NPV_I{\sum_{t=0}^{N} \frac{B_t}{(1 + i)^t} - \sum_{t=0}^{N} \frac{C_t}{(1 + i)^t}}
+\def\NPV_I{\sum_{t=0}^{N} \frac{B_t}{(1 + i)^t} -
+           \sum_{t=0}^{N} \frac{C_t}{(1 + i)^t}}
+
 \begin{equation}
 NPV_I = \NPV_I
 \end{equation}
@@ -107,9 +127,9 @@ of the investment is diffuse or that the interest rate of the loan may change
 outside acceptable levels. One approach to mitigate this is a sensitivity
 analysis.
 
-\section{Additional Factors}
+\section{Factors to Consider}
 
-A major aspect is liquidity. In this paper the investment, in decision $D_I$,
+A critical aspect is liquidity. In this paper the investment, in decision $D_I$,
 has initial investment(s) and subsequent returning cash flow(s). This, combined
 with other relevant cash flows, most notably the down payment of the loan, means
 there can be a liquidity problem. Stated differently, some period(s) can have a
@@ -127,8 +147,8 @@ mitigating this risk may be psychologically soothing, which can be justifiably
 seen as a gain. However, it is prudent to weight it against any financial
 benefit of deciding to do the investment.
 
-The investment, if carried out, may also carry risk, or volatility, which needs to be taken into
-account.
+The investment, if carried out, may also carry risk, or volatility, which needs
+to be taken into account.
 
 Another aspect is the conditions of the loan. For instance student loans in
 Norway and Sweden have advantageous aspects that needs to be taken into account.
