@@ -44,11 +44,11 @@ payments of the loan.
 
 First we define the student loan. It is a \emph{fixed annuity loan} with the
 interest rate $L_r$, the fixed down payment amount $L_d$, and the withstanding
-amount with present value $PV_L$. $PV_L$ is expressed as:
+amount with present value $NPV_L$. $NPV_L$ is expressed as:
 
-\def\PV_L{L_d \times \frac{1 - (r + 1)^{-n}}{r}}
+\def\NPVL{L_d \times \frac{1 - (r + 1)^{-n}}{r}}
 \begin{equation}
-PV_L=\PV_L
+NPV_L=\NPVL
 \end{equation}
 
 This is contrasted to the investment, $I$. In order to compare it to the cost of
@@ -59,7 +59,7 @@ value of cash flows:
 
 \def\NPV_I{\sum_{t=0}^{N} \frac{B_t}{(1 + i)^t} - \sum_{t=0}^{N} \frac{C_t}{(1 + i)^t}}
 \begin{equation}
-NPV_I(i, N)= \NPV_I
+NPV_I = \NPV_I
 \end{equation}
 
 where $B_t$ are the benefits of the cashflow in time $t$, and $C_t$ is the cost
@@ -73,16 +73,16 @@ exclusively financial perspective rational to do the investment; decision $D_I$.
 Mathematically, it means this expression must be true:
 
 \begin{equation}
-    PV_L < NPV_I(i, N)
+0 < NPV_I - NPV_L
 \end{equation}
 
 We compare the present values and not the future values of these two
 alternatives because the option is to down pay the loan today.
 
-When inserting the functions' bodies, it is:
+When inserting the expressions' bodies, it is:
 
 \begin{equation}
-    \PV_L < \NPV_I
+0 < \NPV_I - \NPVL
 \end{equation}
 
 Here we see that there are many variables that affect this inequality:
@@ -109,16 +109,16 @@ analysis.
 
 \section{Additional Factors}
 
-The rates need to be considered. Some may be variable and others fixed, and
-hence inflation may become a factor. For instance, the loan may have a variable
-rate and hence updating to inflation and monetary policy, while the investment
-is fixed. The calculations need to take this into account.
-
-Another aspect is liquidity. In this paper the investment, in decision $D_I$,
+A major aspect is liquidity. In this paper the investment, in decision $D_I$,
 has initial investment(s) and subsequent returning cash flow(s). This, combined
 with other relevant cash flows, most notably the down payment of the loan, means
 there can be a liquidity problem. Stated differently, some period(s) can have a
 negative cash flow. One way to investigate is to net all the cash flow periods.
+
+The rates need to be considered. Some may be variable and others fixed, and
+hence inflation may become a factor. For instance, the loan may have a variable
+rate and hence updating to inflation and monetary policy, while the investment
+is fixed. The calculations need to take this into account.
 
 But there's also psychological aspects. Here the cognitive biases coming into
 play. Having a loan involves risks, most notably not being able to pay the
