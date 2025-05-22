@@ -31,7 +31,7 @@ informally.
 
 The dilemma is that if you don't use your capital to pay down the loan at once,
 you have capital over that you can invest, though you have to take into account
-the running down payments of keeping the loan.
+the down payments of keeping the loan.
 
 Hence, we discuss two different decisions:
 
@@ -44,11 +44,11 @@ payments of the loan.
 
 First we define the student loan. It is a \emph{fixed annuity loan} with the
 interest rate $L_r$, the fixed down payment amount $L_d$, and the withstanding
-amount with present value $PV_w$. $PV_w$ is a cash flow, which is expressed as:
+amount with present value $PV_L$. $PV_L$ is expressed as:
 
-\def\PV_w{L_d \times \frac{1 - (r + 1)^{-n}}{r}}
+\def\PV_L{L_d \times \frac{1 - (r + 1)^{-n}}{r}}
 \begin{equation}
-PV_w=\PV_w
+PV_L=\PV_L
 \end{equation}
 
 This is contrasted to the investment, $I$. In order to compare it to the cost of
@@ -73,13 +73,16 @@ exclusively financial perspective rational to do the investment; decision $D_I$.
 Mathematically, it means this expression must be true:
 
 \begin{equation}
-    PV_w < NPV_I(i, N)
+    PV_L < NPV_I(i, N)
 \end{equation}
+
+We compare the present values and not the future values of these two
+alternatives because the option is to down pay the loan today.
 
 When inserting the functions' bodies, it is:
 
 \begin{equation}
-    \PV_w < \NPV_I
+    \PV_L < \NPV_I
 \end{equation}
 
 Here we see that there are many variables that affect this inequality:
@@ -112,26 +115,30 @@ rate and hence updating to inflation and monetary policy, while the investment
 is fixed. The calculations need to take this into account.
 
 Another aspect is liquidity. In this paper the investment, in decision $D_I$,
-has an initial investment and subsequent returning cash flow(s). This, combined
+has initial investment(s) and subsequent returning cash flow(s). This, combined
 with other relevant cash flows, most notably the down payment of the loan, means
 there can be a liquidity problem. Stated differently, some period(s) can have a
 negative cash flow. One way to investigate is to net all the cash flow periods.
 
-But there's also psychological aspects, here the cognitive biases coming into
+But there's also psychological aspects. Here the cognitive biases coming into
 play. Having a loan involves risks, most notably not being able to pay the
 down payments. The size of this risk can vary with various factors. Still,
 mitigating this risk may be psychologically soothing, which can be justifiably
 seen as a gain. However, it is prudent to weight it against any financial
 benefit of deciding to do the investment.
 
+The investment, if carried out, may also carry risk, or volatility, which needs to be taken into
+account.
+
 Another aspect is the conditions of the loan. For instance student loans in
 Norway and Sweden have advantageous aspects that needs to be taken into account.
 This is for instance the possibility to postpone payments.
 
-\section{Summary}
+\section{Conclusion}
 
 Answering the question of whether to down pay is combination between
 mathematically consider the various options, combined with qualitative
-questions.
+questions. There is no simple answer but needs to be approached analytically and
+possibly a strategic judgment.
 
 \end{document}
