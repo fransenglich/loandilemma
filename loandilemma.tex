@@ -26,8 +26,8 @@ This paper discusses and explains the dilemma of \say{I've gotten a hold of a su
 money. What is the wisest thing to do, shall I down pay my student loan all at once, or
 shall I invest them instead?}
 
-The answer is analyzed mathematically as well as discussed
-informally.
+The dilemma is discussed qualitatively and analyzed mathematically. It is not an
+exhaustive text, but looks from a handful of angles.
 
 Hence, we discuss two different decisions:
 
@@ -41,21 +41,33 @@ payments of the loan.
 The dilemma is that if you don't use your capital to pay down the loan at once,
 you have capital over that you can invest, though you have to take into account
 the down payments of keeping the loan. By investing you can achieve a higher
-overall return.
+overall return if that alternative is advantageous.
 
-Since you keep the loan, the configuration can be seen as that the investment is
-partly funded by the loan which means you hence have a cost of capital -- the
-interest rate -- which can be used in tools such as WACC. Viewing as that you
-are essentially are funding your investment with the loan is useful because the
-interest rates and conditions of student loans are typically highly advantageous.
+Interest rates and conditions of student loans are typically highly advantageous.
 
-The advantage of investing is that you achieve a higher return, although it
-needs to be within risk that are acceptable.
+What may be confusing is that the debt -- your student loan -- stays the same 
+while what it funds differ if you decide to invest. If you invest, the loan
+first funded your studies, while the same amount afterwards is used to fund the
+investment.
+
+If you keep the loan, the configuration can be seen as that the investment is
+fully or partly funded by the loan which means you hence have a cost of capital
+-- the interest rate -- which can be used in tools such as WACC. Notably the
+return of the investment must be higher than the cost of capital -- the interest
+rate of the loan -- for the investment to be profitable.
+
+Also, whether the economy is subject to inflation or deflation is crucial. If
+it's inflation, it means the money supply increases, but the loan does not,
+which is advantageous. In contrast, if deflation resides, the loan's weight in
+contrast to the money supply increases, and down paying would mitigate that.
+
+Whether to invest must beyond the return also be considered from a perspective
+of risk.
 
 The advantage of down paying the loan is that it's the economical rational thing
-to do because investing isn't profitable or feasible. It also comes with the
-advantages associated with not having to down pay the loan since it's done at
-once.
+to do if investing isn't profitable or feasible. It also comes with the
+advantages associated with not having to down pay the loan periodically since
+it's done at once.
 
 \section{Mathematical Analysis}
 
@@ -71,9 +83,10 @@ NPV_L=\NPVL
 
 This is contrasted to the investment, $I$. In order to compare it to the cost of
 paying down the loan, we need to know its present value. Modelling or estimating
-this amount is specific to the investment. If it's a stock, it can be estimated
-in different ways. One approach to model the investment, is as the present net
-value of cash flows:
+this amount is specific to the investment, and that valuation can be done in
+different ways. If it's for instance a stock, it can be estimated in different
+ways. One approach to model the investment, is as the present net value of cash
+flows:
 
 \def\NPV_I{\sum_{t=0}^{N} \frac{B_t}{(1 + i)^t} -
            \sum_{t=0}^{N} \frac{C_t}{(1 + i)^t}}
@@ -105,7 +118,7 @@ When inserting the expressions' bodies, it is:
 0 < \NPV_I - \NPVL
 \end{equation}
 
-Here we see that there are many variables that affect this inequality:
+Here we see that there are several variables that affect this inequality:
 
 $L_d$: the size of the down payment
 
@@ -127,7 +140,7 @@ of the investment is diffuse or that the interest rate of the loan may change
 outside acceptable levels. One approach to mitigate this is a sensitivity
 analysis.
 
-\section{Factors to Consider}
+\section{Other Factors}
 
 A critical aspect is liquidity. In this paper the investment, in decision $D_I$,
 has initial investment(s) and subsequent returning cash flow(s). This, combined
@@ -135,17 +148,17 @@ with other relevant cash flows, most notably the down payment of the loan, means
 there can be a liquidity problem. Stated differently, some period(s) can have a
 negative cash flow. One way to investigate is to net all the cash flow periods.
 
-The rates need to be considered. Some may be variable and others fixed, and
-hence inflation may become a factor. For instance, the loan may have a variable
-rate and hence updating to inflation and monetary policy, while the investment
-is fixed. The calculations need to take this into account.
+The nature of the rates need to be considered. One may be variable and the other
+fixed, and hence inflation may become a factor. For instance, the loan may have
+a variable rate and hence updating to inflation and monetary policy, while the
+investment is fixed. The calculations need to take this into account.
 
-But there's also psychological aspects. Here the cognitive biases coming into
-play. Having a loan involves risks, most notably not being able to pay the
-down payments. The size of this risk can vary with various factors. Still,
-mitigating this risk may be psychologically soothing, which can be justifiably
-seen as a gain. However, it is prudent to weight it against any financial
-benefit of deciding to do the investment.
+But there's also psychological aspects, affected by cognitive biases. Having a
+loan involves risks, most notably not being able to pay the down payments. The
+size of this risk can vary with various factors. Still, mitigating this risk may
+be psychologically soothing, which can be justifiably seen as a gain. However,
+it is prudent to weight it against any financial benefit of deciding to do the
+investment.
 
 The investment, if carried out, may also carry risk, or volatility, which needs
 to be taken into account.
@@ -159,6 +172,6 @@ This is for instance the possibility to postpone payments.
 Answering the question of whether to down pay is combination between
 mathematically consider the various options, combined with qualitative
 questions. There is no simple answer but needs to be approached analytically and
-possibly a strategic judgment.
+a qualitatively strategic judgment.
 
 \end{document}
