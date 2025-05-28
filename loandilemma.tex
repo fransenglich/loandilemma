@@ -62,9 +62,10 @@ which is advantageous. In contrast, if deflation resides, the loan's weight in
 contrast to the money supply increases, and down paying would mitigate that.
 
 Whether to invest must beyond the return also be considered from a perspective
-of risk.
+of risk. In finance this is typically formulated using \emph{expected values},
+meaning $E[r]$ would be considered, where $r$ is the return of the investment.
 
-The advantage of down paying the loan is that it's the economical rational thing
+The advantage of down paying the loan is that it's the economically rational thing
 to do if investing isn't profitable or feasible. It also comes with the
 advantages associated with not having to down pay the loan periodically since
 it's done at once.
@@ -85,7 +86,7 @@ This is contrasted to the investment, $I$. In order to compare it to the cost of
 paying down the loan, we need to know its present value. Modelling or estimating
 this amount is specific to the investment, and that valuation can be done in
 different ways. If it's for instance a stock, it can be estimated in different
-ways. One approach to model the investment, is as the present net value of cash
+ways. One approach to model the investment is as the present net value of cash
 flows:
 
 \def\NPV_I{\sum_{t=0}^{N} \frac{B_t}{(1 + i)^t} -
@@ -146,7 +147,8 @@ A critical aspect is liquidity. In this paper the investment, in decision $D_I$,
 has initial investment(s) and subsequent returning cash flow(s). This, combined
 with other relevant cash flows, most notably the down payment of the loan, means
 there can be a liquidity problem. Stated differently, some period(s) can have a
-negative cash flow. One way to investigate is to net all the cash flow periods.
+negative cash flow. One way to investigate is to net all the cash flow periods,
+if they can be estimated sufficiently.
 
 The nature of the rates need to be considered. One may be variable and the other
 fixed, and hence inflation may become a factor. For instance, the loan may have
@@ -162,6 +164,9 @@ investment.
 
 The investment, if carried out, may also carry risk, or volatility, which needs
 to be taken into account.
+
+Taxation needs to be considered for the investment: tax on capital gains might
+render the investment irrational.
 
 Another aspect is the conditions of the loan. For instance student loans in
 Norway and Sweden have advantageous aspects that needs to be taken into account.
