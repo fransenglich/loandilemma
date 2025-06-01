@@ -22,9 +22,9 @@
 
 \maketitle
 
-This paper discusses and explains the dilemma of \say{I've gotten a hold of a sum of
-money. What is the wisest thing to do, shall I down pay my student loan all at once, or
-shall I invest them instead?}
+This paper discusses and explains the dilemma of \say{I've gotten a hold of a
+sum of money. What is the wisest thing to do, shall I down pay my student loan
+all at once, or shall I invest them instead?}
 
 The dilemma is discussed qualitatively and analyzed mathematically. It is not an
 exhaustive text, but looks from a handful of angles.
@@ -45,7 +45,7 @@ overall return if that alternative is advantageous.
 
 Interest rates and conditions of student loans are typically highly advantageous.
 
-What may be confusing is that the debt -- your student loan -- stays the same 
+What may be confusing is that the debt -- your student loan -- stays the same
 while what it funds differ if you decide to invest. If you invest, the loan
 first funded your studies, while the same amount afterwards is used to fund the
 investment.
@@ -65,8 +65,8 @@ Whether to invest must beyond the return also be considered from a perspective
 of risk. In finance this is typically formulated using \emph{expected values},
 meaning $E[r]$ would be considered, where $r$ is the return of the investment.
 
-The advantage of down paying the loan is that it's the economically rational thing
-to do if investing isn't profitable or feasible. It also comes with the
+The advantage of down paying the loan is that it's the economically rational
+thing to do if investing isn't profitable or feasible. It also comes with the
 advantages associated with not having to down pay the loan periodically since
 it's done at once.
 
@@ -82,12 +82,12 @@ amount with present value $NPV_L$. $NPV_L$ is expressed as:
 NPV_L=L_d \times \frac{1 - (r + 1)^{-n}}{r}
 \end{equation}
 
-This is contrasted to the investment, $I$. In order to compare it to the cost of
-paying down the loan, we need to know its present value. Modelling or estimating
-this amount is specific to the investment, and that valuation can be done in
-different ways. If it's for instance a stock, it can be estimated in different
-ways. One approach to model the investment is as the present net value of cash
-flows:
+This is contrasted to the investment, $I$. In order to compare it to the cost
+of paying down the loan, we need to know its present value. Modelling or
+estimating this amount is specific to the investment, and that valuation can be
+done in different ways. If it's for instance a stock, it can be estimated in
+different ways. One approach to model the investment is as the present net
+value of cash flows:
 
 
 \begin{equation}
@@ -96,7 +96,7 @@ NPV_I = {\sum_{t=0}^{N} \frac{B_t}{(1 + i)^t} -
          \sum_{t=0}^{N} \frac{C_t}{(1 + i)^t}}
 \end{equation}
 
-where $B_t$ are the benefits of the cashflow in time $t$, and $C_t$ is the cost
+where $B_t$ are the benefits of the cash flow in time $t$, and $C_t$ is the cost
 at time $t$. $N$ is the number of periods and $i$ is the discount rate. For
 instance, the costs could be a one-time sum at time $0$, and the benefits could
 be estimated dividends of a stock. We assume of course that the investment is
@@ -126,13 +126,14 @@ Notably, in equation \ref{eq:NPV_ALL}, the same rate is used for the loan and
 the cash flows, $r$. This is because the capital cost of the loan, is used to
 discount the investment.
 
-Here we see that there are several variables that affect this inequality, as summarized in table \ref {Table:variables}.
+Here we see that there are several variables that affect this inequality, as
+summarized in table \ref {Table:variables}.
 
 \begin{table}
 \begin{center}
 \caption{Summary of variables as used in equation \ref{eq:NPV_ALL}.}
 \label{Table:variables}
-\begin{tabular}{ |l|p{4in}| } 
+\begin{tabular}{ |l|p{4in}| }
  \hline
 $L_d$  & the size of the down payment                                      \\
 \hline
@@ -192,7 +193,7 @@ This is for instance the possibility to postpone payments.
 
 Answering the question of whether to down pay is combination between
 mathematically consider the various options, combined with qualitative
-questions. There is no simple answer but needs to be approached analytically and
-a qualitatively strategic judgment.
+questions. There is no simple answer but needs to be approached analytically
+and a qualitatively strategic judgment.
 
 \end{document}
