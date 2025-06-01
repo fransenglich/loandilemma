@@ -126,20 +126,30 @@ Notably, in equation \ref{eq:NPV_ALL}, the same rate is used for the loan and
 the cash flows, $r$. This is because the capital cost of the loan, is used to
 discount the investment.
 
-Here we see that there are several variables that affect this inequality:
+Here we see that there are several variables that affect this inequality, as summarized in table \ref {Table:variables}.
 
-$L_d$: the size of the down payment
-
-$r$: The interest rate of the loan, which also the discount rate for the cash
-flows.
-
-$n$: The count of down payment
-
-$B_t$: The benefits of the investment
-
-$C_t$: The costs of the investment
-
-$N$: The amount of cash flow periods.
+\begin{table}
+\begin{center}
+\caption{Summary of variables as used in equation \ref{eq:NPV_ALL}.}
+\label{Table:variables}
+\begin{tabular}{ |l|p{4in}| } 
+ \hline
+$L_d$  & the size of the down payment                                      \\
+\hline
+$r$    & The interest rate of the loan, which also the discount rate for the
+         cash flows.                                                       \\
+\hline
+$n$    & The count of down payments                                        \\
+\hline
+$B_t$  & The benefits of the investment                                    \\
+\hline
+$C_t$  & The costs of the investment                                       \\
+\hline
+$N$    & The amount of cash flow periods.                                  \\
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
 
 In practice this inequality can be hard to approach and solve, because the
 required variables can't be sufficiently estimated. For instance, the return(s)
