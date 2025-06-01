@@ -76,10 +76,10 @@ First we define the student loan. It is a \emph{fixed annuity loan} with the
 interest rate $L_r$, the fixed down payment amount $L_d$, and the withstanding
 amount with present value $NPV_L$. $NPV_L$ is expressed as:
 
-\def\NPVL{L_d \times \frac{1 - (r + 1)^{-n}}{r}}
 
 \begin{equation}
-NPV_L=\NPVL
+\label{eq:NPV_L}
+NPV_L=L_d \times \frac{1 - (r + 1)^{-n}}{r}
 \end{equation}
 
 This is contrasted to the investment, $I$. In order to compare it to the cost of
@@ -89,11 +89,11 @@ different ways. If it's for instance a stock, it can be estimated in different
 ways. One approach to model the investment is as the present net value of cash
 flows:
 
-\def\NPV_I{\sum_{t=0}^{N} \frac{B_t}{(1 + i)^t} -
-           \sum_{t=0}^{N} \frac{C_t}{(1 + i)^t}}
 
 \begin{equation}
-NPV_I = \NPV_I
+\label{eq:NPV_I}
+NPV_I = {\sum_{t=0}^{N} \frac{B_t}{(1 + i)^t} -
+         \sum_{t=0}^{N} \frac{C_t}{(1 + i)^t}}
 \end{equation}
 
 where $B_t$ are the benefits of the cashflow in time $t$, and $C_t$ is the cost
@@ -116,22 +116,28 @@ alternatives because the option is to down pay the loan today.
 When inserting the expressions' bodies, it is:
 
 \begin{equation}
-0 < \NPV_I - \NPVL
+\label{eq:NPV_ALL}
+0 < {\sum_{t=0}^{N} \frac{B_t}{(1 + r)^t} -
+     \sum_{t=0}^{N} \frac{C_t}{(1 + r)^t}}
+     - L_d \times \frac{1 - (r + 1)^{-n}}{r}
 \end{equation}
+
+Notably, in equation \ref{eq:NPV_ALL}, the same rate is used for the loan and
+the cash flows, $r$. This is because the capital cost of the loan, is used to
+discount the investment.
 
 Here we see that there are several variables that affect this inequality:
 
 $L_d$: the size of the down payment
 
-$r$: The interest rate of the loan
+$r$: The interest rate of the loan, which also the discount rate for the cash
+flows.
 
 $n$: The count of down payment
 
 $B_t$: The benefits of the investment
 
 $C_t$: The costs of the investment
-
-$i$: The discount rate for the investment
 
 $N$: The amount of cash flow periods.
 
