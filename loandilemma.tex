@@ -79,7 +79,7 @@ amount with present value $NPV_L$. $NPV_L$ is expressed as:
 
 \begin{equation}
 \label{eq:NPV_L}
-NPV_L=L_d \times \frac{1 - (r + 1)^{-n}}{r}
+NPV_L=L_d \frac{1 - (r + 1)^{-n}}{r}
 \end{equation}
 
 This is contrasted to the investment, $I$. In order to compare it to the cost
@@ -117,9 +117,9 @@ When inserting the expressions' bodies, it is:
 
 \begin{equation}
 \label{eq:NPV_ALL}
-0 < {\sum_{t=0}^{N} \frac{B_t}{(1 + r)^t} -
-     \sum_{t=0}^{N} \frac{C_t}{(1 + r)^t}}
-     - L_d \times \frac{1 - (r + 1)^{-n}}{r}
+0 < {(\sum_{t=0}^{N} \frac{B_t}{(1 + r)^t} -
+     \sum_{t=0}^{N} \frac{C_t}{(1 + r)^t}})(1 - r_c)
+     - L_d \frac{1 - (r + 1)^{-n}}{r}
 \end{equation}
 
 Notably, in equation \ref{eq:NPV_ALL}, the same rate is used for the loan and
@@ -146,7 +146,9 @@ $B_t$  & The benefits of the investment                                    \\
 \hline
 $C_t$  & The costs of the investment                                       \\
 \hline
-$N$    & The amount of cash flow periods.                                  \\
+$N$    & The amount of cash flow periods                                   \\
+\hline
+$r_c$  & Capital gains tax.                                                \\
  \hline
 \end{tabular}
 \end{center}
